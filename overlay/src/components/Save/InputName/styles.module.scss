@@ -1,0 +1,13 @@
+@import "../../../sassVariables.scss";
+
+.inputBox {
+  input {
+    background-color: darken($bgColor, 12%);
+    border: none;
+    border-bottom: 1px solid $teal;
+    outline: none;
+    width: 210px;
+    font-size: $inputSize;
+    color: #cec59f;
+  }
+}

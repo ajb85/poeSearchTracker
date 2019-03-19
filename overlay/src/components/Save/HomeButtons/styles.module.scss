@@ -1,0 +1,36 @@
+@import "../../../sassVariables.scss";
+button.buttons {
+  background-color: $bgColor;
+  color: $teal;
+  border: 1px solid $orange;
+  position: fixed;
+  right: 2px;
+  z-index: 0;
+  font-size: 18px;
+  width: 50px;
+  animation: loadButtons 0.25s both;
+
+  @keyframes loadButtons {
+    from {
+      right: -64px;
+    }
+    to {
+      right: 2px;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+    outline-color: $teal;
+  }
+
+  &.switch {
+    top: 5%;
+  }
+  &.new {
+    top: 11%;
+  }
+  &.save {
+    top: 17%;
+  }
+}
